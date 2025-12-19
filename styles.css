@@ -146,5 +146,46 @@ object-fit: contain; / preserve logo aspect */
 .ftr__grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px;padding:28px 20px}
 .ftr__col a{display:block;color:#ccd2e3;text-decoration:none;margin:6px 0}
 .ftr__col a:hover{text-decoration:underline}
+
+/* Social icons */
+.social {
+  display:flex;
+  gap:10px;
+  margin-top:12px;
+}
+
+.social a {
+  text-decoration:none;
+}
+
+.social__icon {
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:15px;
+  font-weight:800;
+  color:#0f1220;
+  background:#e5e7eb;
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+  box-shadow:0 0 0 1px rgba(148,163,184,.5);
+}
+
+/* platform colors */
+.social__icon--in { background:#0a66c2; color:#fff; }
+.social__icon--fb { background:#1877f2; color:#fff; }
+.social__icon--ig {
+  background:radial-gradient(circle at 30% 30%, #fdf497 0, #fd5949 40%, #d6249f 70%, #285AEB 100%);
+  color:#fff;
+}
+
+.social__icon:hover {
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(0,0,0,.35);
+}
+
 .logo--sm{height:36px;margin-bottom:8px}
 .ftr__bottom{text-align:center;border-top:1px solid rgba(255,255,255,.08);padding:12px 20px;color:#9aa4bf}
+
