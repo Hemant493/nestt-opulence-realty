@@ -42,15 +42,8 @@ async function submitLead(form){
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const leadForm = document.querySelector('#lead-form');
-  if (leadForm) {
-    leadForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      submitLead(leadForm);
-    });
-  }
 });
+
 
 
 
