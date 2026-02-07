@@ -16,15 +16,19 @@ if (prev) prev.onclick=()=>{ idx=(idx-1+slides.length)%slides.length; show(idx);
 if (next) next.onclick=()=>{ idx=(idx+1)%slides.length; show(idx); };
 
 // Simple lead handler (replace with real backend/Formspree)
-async function submitLead(form) {
+async function submitLead(form){
   const data = Object.fromEntries(new FormData(form));
 
-  try {
-    const res = await fetch('/api/leads', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    });
+  await fetch("https://formspree.io/f/xwvnkbkd", {
+    method: "POST",
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+
+  alert("Thank you! Our advisor will contact you shortly.");
+  form.reset();
+}
+
 
     if (res.ok) {
       alert('Thank you! A property advisor will contact you shortly.');
@@ -47,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
 
 
 
