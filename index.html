@@ -228,24 +228,45 @@
   <div class="ftr__bottom">© 2025 Nestt Opulence Realty. All rights reserved.</div>
 </footer>
 
-<form class="form" id="lead-form">
-  <!-- existing inputs -->
-  <input type="text" name="name" placeholder="Your name" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <input type="tel" name="phone" placeholder="Phone" required>
-  <textarea name="message" placeholder="Tell us what you’re looking for"></textarea>
+<form class="form" action="https://formspree.io/f/xvwnkbkd" method="POST">
 
-  <!-- hidden metadata -->
-  <input type="hidden" name="project" id="lead-project">
-  <input type="hidden" name="source" id="lead-source" value="contact-section">
+  <label>
+    Name
+    <input type="text" name="name" required>
+  </label>
 
-  <button type="submit" class="btn btn--lg">Enquire</button>
+  <label>
+    Phone
+    <input type="tel" name="phone" pattern="[0-9+ -]{8,}" required>
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" required>
+  </label>
+
+  <label>
+    Enquiry
+    <textarea name="enquiry" rows="4" required></textarea>
+  </label>
+
+  <!-- Email subject -->
+  <input type="hidden" name="_subject" value="New Lead from Nestt Website">
+
+  <button class="btn btn--lg" type="submit">Send Enquiry</button>
+
+  <p class="fine">
+    By submitting, you agree to be contacted regarding properties and offers.
+  </p>
+
 </form>
+
   
 
 <script src="app.js"></script>
 </body>
 </html>
+
 
 
 
