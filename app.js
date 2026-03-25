@@ -20,7 +20,7 @@ export default function Home() {
             Explore Properties
           </a>
           <a
-            href="https://wa.me/91XXXXXXXXXX"
+            href="https://wa.me/+91 9818954713"
             className="border border-white px-6 py-3 rounded-full"
           >
             Chat on WhatsApp
@@ -57,7 +57,7 @@ export default function Home() {
                 <p className="mt-3 font-bold">Starting ₹2.5 Cr</p>
 
                 <a
-                  href="https://wa.me/91XXXXXXXXXX"
+                  href="https://wa.me/+91 9818954713"
                   className="mt-4 inline-block bg-white text-black px-4 py-2 rounded-full"
                 >
                   Get Details
@@ -88,7 +88,7 @@ export default function Home() {
           </p>
 
           <a
-            href="https://wa.me/91XXXXXXXXXX"
+            href="https://wa.me/+91 9818954713"
             className="mt-6 inline-block bg-white text-black px-6 py-3 rounded-full"
           >
             Talk to Founder
@@ -107,7 +107,7 @@ export default function Home() {
             <iframe
               key={item}
               className="w-full h-64 rounded-xl"
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              src="https://www.youtube.com/channel/UCwjGg7Y9YC3ZlHw6EENU29g"
               allowFullScreen
             ></iframe>
           ))}
@@ -130,6 +130,4 @@ export default function Home() {
 
     </main>
   );
-
-npm install framer-motion
 }
